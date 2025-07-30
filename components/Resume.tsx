@@ -3,13 +3,13 @@ import { CardSpotlight } from "./ui/CardSpotlight";
 import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 
-const Resume = () => {
+const Resume = ({ id }: { id?: string }) => {
   const handleResumeClick = () => {
     window.open("/Resume.pdf", "_blank");
   };
 
   return (
-    <div className="py-20 w-full">
+    <div id={id} className="py-20 w-full">
       <h1 className="heading">
         My <span className="text-purple">Resume</span>
       </h1>
