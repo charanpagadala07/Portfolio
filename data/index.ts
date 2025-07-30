@@ -97,13 +97,14 @@ export const projects = [
     link: "https://blogoodle.onrender.com/",
   },
   {
-    id: 4,
-    title: "ChatMate - A Real-time Chat Application",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/jscript.png"],
-    link: "https://chatmate-pmbj.onrender.com/",
-  },
+  id: 4,
+  title: "ChatMate - A Real-time Chat Application",
+  des: "ChatMate is a real-time chat application built using the MERN stack and Socket.io. It features user authentication, live messaging, online/offline status indicators, and a responsive UI. Powered by Socket.io, it enables instant two-way communication between users for a seamless chat experience.",
+  img: "/p4.svg",
+  iconLists: ["/re.svg", "/tail.svg", "/jscript.png"],
+  link: "https://chatmate-pmbj.onrender.com/"
+}
+
 ];
 
 export const testimonials = [
