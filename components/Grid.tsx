@@ -1,9 +1,9 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
-const Grid = () => {
+const Grid = ({ id }: { id?: string }) => {
   return (
-    <section id="about">
+    <section id={id || "about"}>
       <BentoGrid className="w-full py-20">
         {gridItems.map((item, i) => (
           <BentoGridItem

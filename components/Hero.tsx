@@ -52,7 +52,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Turning Ideas into Fluid, Fast, and User-Friendly Applications"
+            words="Developing Fast, Scalable, and User-Friendly Applications"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
