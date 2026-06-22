@@ -57,12 +57,12 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider font-semibold mb-2 text-2xs md:text-xs lg:text-lg text-white-100">
-            Heyy! I'm Charan Pagadala — a Full-Stack Developer specializing in
-            Java, Spring Boot, React.js, and SQL. With experience building
+            Heyy! I&apos;m Charan Pagadala — a Full-Stack Developer specializing
+            in Java, Spring Boot, React.js, and SQL. With experience building
             scalable web applications and production-grade systems at Starkin
-            Solutions, I'm passionate about backend engineering, microservices
-            architecture, cloud technologies, and AI-driven solutions like my
-            accessibility project, Gestura.
+            Solutions, I&apos;m passionate about backend engineering,
+            microservices architecture, cloud technologies, and AI-driven
+            solutions like my accessibility project, Gestura.
           </p>
 
           <a href="#projects">
