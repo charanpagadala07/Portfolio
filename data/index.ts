@@ -51,7 +51,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Working at Starkin Solutions; learning DSA in Java currently.",
+    title:
+      "Ex-Intern at Starkin Solutions; learning advanced SQL and DSA in Java currently.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -74,104 +75,112 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Pravishto - A Pujari Booking Application",
-    des: "A MERN-based platform where users can easily book pujaris for religious ceremonies, with a smooth booking flow and user-friendly interface.",
-    img: "/pravishto.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/jscript.png", "/node.png"],
-    link: "/pravishto.svg",
+    title: "GESTURA – Sign Language to Gender-Based Speech System",
+    des: "AI-powered accessibility system translating Indian Sign Language gestures to real-time speech. Integrated DeepFace gender detection with FastAPI backend.",
+    img: "/Gestura.png",
+    iconLists: ["/python.png", "/fastapi.png", "/ml.png"],
+    link: "https://github.com/charanpagadala07/Gestura",
+    thumbnail: "/Gestura.png",
+    skillset: "Python, FastAPI, MediaPipe, DeepFace, Machine Learning",
   },
   {
     id: 2,
-    title: "Lono - A Digital Loan Management System",
-    des: "Built with role-based logic, this app enables secure, multi-level loan approvals, from submission to final clearance.",
-    img: "/lono.png",
-    iconLists: ["/jscript.png", "/node.png", "/re.svg", "/tail.svg"],
-    link: "/lono.png",
+    title: "AI-Powered Fitness Recommendation Application",
+    des: "Spring Boot microservices architecture with 6 modular services. Token-driven security with Keycloak and RabbitMQ messaging optimization.",
+    img: "/Fitmind.png",
+    iconLists: ["/java.png", "/springboot.png", "/rabbitmq.png"],
+    link: "https://github.com/charanpagadala07/Fitness-Recommendation-Application",
+    thumbnail: "/Fitmind.png",
+    skillset:
+      "Java, Spring Boot, Microservices, Keycloak, RabbitMQ, Google Gemini API",
   },
   {
     id: 3,
     title: "Blogoodle - a Cartoonic Twitter Clone",
-    des: "A cartoon-style blogging app inspired by Twitter, where users can write, and explore blogs in a fun and lightweight interface.",
-    img: "/logo.png",
+    des: "Cartoon-style blogging app inspired by Twitter. Users can write, explore blogs, and connect with people in a fun interface.",
+    img: "/blogoodle.png",
     iconLists: ["/node.png", "/tail.svg", "/re.svg", "/jscript.png"],
     link: "https://blogoodle.onrender.com/",
-  },
-  {
-  id: 4,
-  title: "ChatMate - A Real-time Chat Application",
-  des: "ChatMate is a real-time chat application built using the MERN stack and Socket.io. It features user authentication, live messaging, online/offline status indicators, and a responsive UI. Powered by Socket.io, it enables instant two-way communication between users for a seamless chat experience.",
-  img: "/p4.svg",
-  iconLists: ["/re.svg", "/tail.svg", "/jscript.png"],
-  link: "https://chatmate-pmbj.onrender.com/"
-}
-
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    thumbnail: "/blogoodle.png",
+    skillset: "React, Node.js, Tailwind CSS, JavaScript",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    title: "ChatMate - A Real-time Chat Application",
+    des: "Real-time chat application built with MERN stack and Socket.io. Features user authentication, live messaging, and online/offline status indicators.",
+    img: "/Chatmate.png",
+    iconLists: ["/re.svg", "/tail.svg", "/jscript.png"],
+    link: "https://chatmate-pmbj.onrender.com/",
+    thumbnail: "/Chatmate.png",
+    skillset: "React, Express, Node.js, Socket.io, Tailwind CSS",
   },
 ];
+
+// export const testimonials = [
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+// ];
+
+// export const companies = [
+//   {
+//     id: 1,
+//     name: "cloudinary",
+//     img: "/cloud.svg",
+//     nameImg: "/cloudName.svg",
+//   },
+//   {
+//     id: 2,
+//     name: "appwrite",
+//     img: "/app.svg",
+//     nameImg: "/appName.svg",
+//   },
+//   {
+//     id: 3,
+//     name: "HOSTINGER",
+//     img: "/host.svg",
+//     nameImg: "/hostName.svg",
+//   },
+//   {
+//     id: 4,
+//     name: "stream",
+//     img: "/s.svg",
+//     nameImg: "/streamName.svg",
+//   },
+//   {
+//     id: 5,
+//     name: "docker.",
+//     img: "/dock.svg",
+//     nameImg: "/dockerName.svg",
+//   },
+// ];
 
 export const workExperience = [
   {

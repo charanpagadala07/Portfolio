@@ -3,82 +3,61 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
+import { Button } from "./ui/MovingBorders";
 
 const RecentProjects = ({ id }: { id?: string }) => {
   return (
-    <div id={id} className="py-20">
+    <div id={id} className="py-20 w-full">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
-          <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
+
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+        {projects.map((card) => (
+          <Button
+            key={card.id}
+            duration={Math.floor(Math.random() * 10000) + 10000}
+            borderRadius="1.75rem"
+            style={{
+              background: "rgb(4,7,29)",
+              backgroundColor:
+                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+              borderRadius: `calc(1.75rem* 0.96)`,
+            }}
+            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 lg:col-span-2"
           >
-            <PinContainer
-              title={item.link}
-              href={item.link}
-            >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
+            <div className="flex flex-col p-3 py-6 md:p-5 lg:p-10 gap-4 h-full justify-between">
+              <div className="flex lg:flex-row flex-col lg:items-center gap-2">
                 <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  src={card.thumbnail}
+                  alt={card.title}
+                  className="lg:w-32 md:w-20 w-16 rounded-lg object-cover"
                 />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
-                <a 
-                  href={item.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex justify-center items-center cursor-pointer hover:opacity-80 transition-opacity"
-                >
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                <div className="lg:ms-5">
+                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                    {card.title}
+                  </h1>
+                  <p className="text-start text-white-100 mt-3 font-semibold text-sm">
+                    {card.des}
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </a>
+                  <p className="text-start text-purple mt-4 font-medium text-xs md:text-sm">
+                    Skillset used: {card.skillset}
+                  </p>
+                </div>
               </div>
-            </PinContainer>
-          </div>
+
+              <a
+                href={card.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-end gap-2 text-purple hover:text-purple-400 transition-colors duration-200 self-end"
+              >
+                <span className="text-sm font-medium">View Project</span>
+                <FaLocationArrow size={14} />
+              </a>
+            </div>
+          </Button>
         ))}
       </div>
     </div>

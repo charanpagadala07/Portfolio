@@ -56,12 +56,16 @@ const Hero = () => {
             className="text-center text-[36px] md:text-4xl lg:text-5xl"
           />
 
-          <p className="text-center md:tracking-wider font-semibold mb-2 text-sm md:text-lg lg:text-2xl">
-            Heyy! I&apos;m Charan Pagadala — full-stack developer specializing
-            in modern web
+          <p className="text-center md:tracking-wider font-semibold mb-2 text-2xs md:text-xs lg:text-lg text-white-100">
+            Heyy! I'm Charan Pagadala — a Full-Stack Developer specializing in
+            Java, Spring Boot, React.js, and SQL. With experience building
+            scalable web applications and production-grade systems at Starkin
+            Solutions, I'm passionate about backend engineering, microservices
+            architecture, cloud technologies, and AI-driven solutions like my
+            accessibility project, Gestura.
           </p>
 
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
